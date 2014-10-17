@@ -1,0 +1,12 @@
+# Site settings
+title: G - the Perfect Insider
+email: gogu9909@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  something talk about later.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: gogu9909
+github_username:  gogu
+
+# Build settings
+markdown: kramdown
