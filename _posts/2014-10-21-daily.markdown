@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "简单的日记"
+date:   2014-10-21 20:47:12
+categories: daily 
+---
+简单写个记录，今天就是工作。
+merge -> solve conflict -> push && pull request ..
+测试环境比较稳定了。
+接下来不求甚解地继续学 Linux，求甚解地继续学 js。
+
+New 3DS 真心赞。
