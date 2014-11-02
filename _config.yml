@@ -10,3 +10,9 @@ github_username:  gogu
 
 # Build settings
 markdown: kramdown
+
+# duoshuo
+comments:
+  provider: duoshuo
+  duoshuo:
+    short_name: gpi 
