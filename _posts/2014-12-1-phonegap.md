@@ -17,14 +17,18 @@ PhoneGap 官方提供 npm 方式获取，所以先安装 node 吧。
 
 有了 node 之后，下面的内容和 [官网](http://phonegap.com/install/) 一样
 
-    // 当然 windows 就不用 sudo 了
-    $ sudo npm install phonegap -g
+{% highlight bash %}
+// 当然 windows 就不用 sudo 了
+$ sudo npm install phonegap -g
+{% endhighlight %}
 
 #### 然后看看官方 demo 吧
 
-    $ phonegap create my-app
-    $ cd my-app
-    $ phonegap run android
+{% highlight bash %}
+$ phonegap create my-app
+$ cd my-app
+$ phonegap run android
+{% endhighlight %}
 
 phonegap 会自动为你加上 android 平台的部署依赖，构建 App 然后运行。不过虽然官方是这么写的，也并不是说在自己的机器上就能好好执行，还需要对不用平台做一些准备的，下次再来研究这些。我们就这么直接在线构建出打包应用，在机器上玩玩吧！
 
