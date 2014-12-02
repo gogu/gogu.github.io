@@ -44,5 +44,6 @@ phonegap 会自动为你加上 android 平台的部署依赖，构建 App 然后
 
 扫码可以下载应用安装看看效果！恩，这个简单的 demo 只是会显示出 device ready 而已，这就是第一步。
 
+// todo 改得能让女朋友学会
 // todo 补充文章
 
