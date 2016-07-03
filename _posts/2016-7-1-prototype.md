@@ -66,7 +66,7 @@ const obj2 = Object.setPrototypeOf({}, obj1);
 console.log(obj2.a); // 2
 ```
 
-其实第二种方法做了多余的事情，因为 new 操作符的实际作用是 “将一个函数作为构造函数调用”, 一个空的构造函数被执行了，这又如何？prototype 上还有个属性叫 constructor
+其实第二种方法做了多余的事情，因为 new 操作符的实际作用是 “将一个函数作为构造函数调用”，一个空的构造函数被执行了，这又如何？prototype 上还有个属性叫 constructor
 
 ```javascript
 
@@ -102,7 +102,7 @@ console.log(a instanceof Date); // true
 
 > 最好记住这一点 “constructor 并不表示被构造”。
 
-> ……实际上是不被信任的，他们不一定会指向默认的函数引用。很快我们就会看到，稍不留神 constructor 就可能会只想你意想不到的地方。
+> ……实际上是不被信任的，他们不一定会指向默认的函数引用。很快我们就会看到，稍不留神 constructor 就可能会指向你意想不到的地方。
 
 <br>
 
@@ -230,7 +230,7 @@ const Foo = {
 
 const Bar = Object.create(Foo);
 
-Bar.setup = function(name, gender) {
+Bar.reg = function(name, gender) { // 这很……语义
   this.init(name);
   this.gender = gender;
 };
@@ -240,7 +240,7 @@ Bar.getGender = function() {
 };
 
 const bar = Object.create(Bar);
-bar.setup('gogu', 'male');
+bar.reg('gogu', 'male');
 
 bar.getName(); // 'gogu'
 bar.getGender(); // 'male'
@@ -248,4 +248,4 @@ bar.getGender(); // 'male'
 
 确实没有了遮遮掩掩，个人初感笨拙却做回了自己，值得去实践一下。
 
-事实上书的附录中还痛批了 ES6 的 class 关键字，说其隐藏了本质，增加了误解。见仁见智吧，我觉得无论用 js 或者无论什么语言实现了什么样的范式都不应该算犯错，也许就是开发者口味和市场供求关系的问题。
+事实上书的附录中还痛批了 ES6 的 class 关键字，说其隐藏了本质，增加了误解。见仁见智吧，毕竟有那么多内置 js 类，还存在着大量第三方 js 类库，未来 js 脱离类模型挺难的。我觉得无论用 js 或者无论什么语言实现了什么样的范式都不应该算犯错，也许就是开发者口味和市场供求关系的问题。
